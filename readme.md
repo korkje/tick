@@ -17,12 +17,7 @@ Also exports a `ticks` function generator. The above example can be rewritten as
 ```ts
 import { ticks } from "jsr:@korkje/tick";
 
-for await (const _ of ticks(10)) {
-    console.log(_); // _ is 'undefined'
-}
-
-// or, if you want the loop index:
-for await (const i of ticks(10, { index: true })) {
+for await (const i of ticks(10)) {
     console.log(i);
 }
 ```
