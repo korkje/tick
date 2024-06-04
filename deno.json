@@ -1,0 +1,17 @@
+{
+    "name": "@korkje/tick",
+    "version": "0.0.0",
+    "exports": "./mod.ts",
+    "publish": {
+        "include": [
+            "mod.ts",
+            "lib/**/*",
+            "license.md",
+            "readme.md"
+        ]
+    },
+    "lock": false,
+    "imports": {
+        "lib/": "./lib/"
+    }
+}
